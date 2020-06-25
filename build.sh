@@ -1,0 +1,1 @@
+echo -e "#!/bin/bash\\n$(cat shift.sh)" > packages/shift

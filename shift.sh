@@ -1,1 +1,1 @@
-echo Welcome to shift!
+echo Shift!
