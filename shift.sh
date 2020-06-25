@@ -1,6 +1,10 @@
 if [ $1 ]; then
     if [ $1 = 'dl' ]; then
-        echo 'download v1'
+        if [ $2 ]; then
+            curl -fsSL https://raw.githubusercontent.com/finngreiter/shift/master/packages/$2.sh | bash
+        else
+            echo 'package not specefied!'
+        fi
     else
         echo 'command not specified!'
     fi
