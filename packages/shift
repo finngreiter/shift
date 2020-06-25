@@ -1,2 +1,10 @@
 #!/bin/bash
-echo Shift!
+if [ $1 ]; then
+    if [ $1 = 'dl' ]; then
+        echo 'download'
+    else
+        echo 'command not specified!'
+    fi
+else
+    echo 'no command!'
+fi
